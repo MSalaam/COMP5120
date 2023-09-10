@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Database query form by Moe Salaam</title>
+</head>
+<body>
+	<h1>Database query form by Moe Salaam</h1>
+	<form action="query_results.php" method="POST">
+		<label for="query">Input query:</label>
+		<input type="text" id="query" name="query"><br><br>
+		<input type="submit" value="Submit">
+		<input type="button" value="Clear" onclick="clearInput()">
+	</form>
+	<script>
+		function clearInput() {
+			document.getElementById("query").value = "";
+		}
+	</script>
+</body>
+</html>
